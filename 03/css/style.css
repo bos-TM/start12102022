@@ -1,0 +1,38 @@
+* {
+  box-sizing: border-box;
+}
+
+body,
+html {
+  font-family: 'Roboto', sans-serif;
+}
+
+header {
+  background-color: #fff;
+  padding: 10px 0;
+}
+
+.wrapper {
+  width: 940px;
+  margin: 0 auto;
+}
+
+.logo,
+.links {
+  width: 460px;
+  display: inline-block;
+}
+
+.links {
+  text-align: right;
+}
+
+a {
+  text-decoration: none;
+}
+
+section,
+.links_footer,
+.logo_footer {
+  text-align: center;
+}
