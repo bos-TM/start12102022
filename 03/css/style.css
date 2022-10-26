@@ -2,37 +2,152 @@
   box-sizing: border-box;
 }
 
-body,
-html {
-  font-family: 'Roboto', sans-serif;
-}
-
-header {
-  background-color: #fff;
-  padding: 10px 0;
-}
-
 .wrapper {
   width: 940px;
   margin: 0 auto;
 }
 
-.logo,
-.links {
-  width: 460px;
-  display: inline-block;
+header {
+  padding: 23px 0;
 }
 
-.links {
-  text-align: right;
+body {
+  font-size: 23px;
+  font-family: 'Roboto', sans-serif;
+  background-color: #fff;
+}
+
+h4,
+h3,
+p {
+  margin: 0;
+}
+
+p {
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.title-h3,
+.title-h4 {
+  font-weight: 400;
+  color: #8A6D2F;
+}
+
+.title-h4 {
+  font-size: 44px;
+}
+
+.title-h3 {
+  font-size: 37px;
+  padding-bottom: 35px;
+}
+
+.infinity-block {
+  padding-bottom: 82px;
+  background-color: #F2F2F2;
+}
+
+.infinity,
+.tellFriends>h3 {
+  padding-top: 56px;
+  padding-bottom: 31px;
+}
+
+.title-h3.infinity,
+.mobile {
+  color: rgba(0, 0, 0, 0.56);
+  padding-top: 75px;
 }
 
 a {
   text-decoration: none;
 }
 
+.logo,
+.social-links {
+  width: 466px;
+  display: inline-block;
+}
+
+.social-links {
+  text-align: right;
+}
+
+.social-links ul,
+.links_footer ul {
+  margin: 0;
+  padding: 0;
+}
+
+.social-links>ul li {
+  margin-left: 20px;
+}
+
+.social-links ul li,
+.links_footer ul li {
+  display: inline-block;
+  list-style: none;
+}
+
+.email-form,
+.tellFriends {
+  background-color: #FAC960;
+}
+
+.email-form {
+  padding: 92px 0;
+
+}
+
+.email-form form {
+  width: 800px;
+  margin: 0 auto;
+}
+
+.email-input,
+.button {
+  display: inline-block;
+}
+
+.email-input {
+  padding: 10px;
+  width: 556px;
+}
+
+.button {
+  padding: 10px;
+  width: 238px;
+  color: #fff;
+  background-color: #A8863D;
+}
+
 section,
 .links_footer,
-.logo_footer {
+.logo_footer,
+.button,
+.tellFriends-input {
   text-align: center;
+}
+
+.iPhone {
+  padding-top: 32px;
+  padding-bottom: 20px;
+}
+
+.tellFriends {
+  padding-bottom: 107px;
+}
+
+.tellFriends-input {
+  margin-top: 33px;
+  width: 61px;
+}
+
+footer {
+  padding: 81px 0 81px 0;
+}
+
+.links_footer ul li {
+  padding-top: 24px;
+  padding-bottom: 10px;
 }
