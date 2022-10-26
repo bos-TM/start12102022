@@ -1,0 +1,93 @@
+* {
+  box-sizing: border-box;
+}
+
+.dia-block {
+  position: relative;
+  height: 512px;
+  width: 512px;
+  background: rgb(0, 0, 0);
+}
+
+.dia-text {
+  position: absolute;
+  left: 101px;
+  top: 128.64px;
+}
+
+.ukraine-flag {
+  position: absolute;
+  top: 343px;
+  left: 216px;
+  height: 60px;
+  width: 80px;
+  background: linear-gradient(180deg,
+      #2137fc 0%,
+      #2137fb 50.01%,
+      #ffd84b 50.04%,
+      #ffd84b 100%);
+  border-radius: 6px;
+}
+
+.ukraine-sqare-logo {
+  position: relative;
+  left: 430px;
+  top: -140px;
+  height: 512px;
+  width: 512px;
+  background: linear-gradient(180deg,
+      #2137fc 0%,
+      #2137fb 50.01%,
+      #ffd84b 50.04%,
+      #ffd84b 100%);
+  z-index: 100;
+}
+
+.glyph {
+  position: absolute;
+  left: 52.61px;
+  top: 144px;
+}
+
+.ukraine-circle-logo {
+  position: relative;
+  left: 880px;
+  top: -250px;
+  height: 512px;
+  width: 512px;
+  background: #fff;
+  border-bottom: solid blue 1px;
+  border-top: solid blue 1px;
+}
+
+.ukraine-ciecle-flag {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  height: 460px;
+  width: 460px;
+  border-radius: 50%;
+  background: linear-gradient(180deg,
+      #ffd84b 0%,
+      #ffd84b 50.01%,
+      #ffd84b 50.04%,
+      #ffd84b 100%);
+}
+
+.tri {
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  width: 460px;
+
+  /* background: rgb(211, 37, 37); */
+}
+
+.glyph-2 {
+  position: absolute;
+  /* background: #000; */
+  z-index: 10000000;
+  top: 243px;
+  left: 68px;
+  width: 370px;
+}
