@@ -196,6 +196,13 @@ input,
   text-align: center;
 }
 
+.destination::after {
+  content: url(../img/doubleArrowDown.png);
+  position: relative;
+  right: 70px;
+  top: 30px;
+}
+
 .destination-link {
   text-decoration: none;
   font-family: 'Sen';
@@ -207,10 +214,4 @@ input,
 .destination-link:hover {
   color: red;
   font-weight: 600;
-}
-
-.double-arrows {
-  position: relative;
-  left: 625px;
-  margin-bottom: 54px;
 }
