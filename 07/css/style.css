@@ -1,80 +1,1325 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@600;700&family=Quicksand:wght@300&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans&display=swap");
+
 * {
+  /* font-family: "Poppins", sans-serif; */
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: 1px solid limegreen !important;
+}
+
+.clearfix:after {
+  display: table;
+  content: "";
+  clear: both;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  /* background-image: url("../img/BG\ Hero.png"), url("../img/Rectangle 1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: black; */
+  background-image: url("../img/Background.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-color: black;
+  font-family: "Nunito Sans", sans-serif;
+  font-family: "Open Sans", sans-serif;
+}
+
+header {
+  margin: 0 auto;
+  padding: 64px 85px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* background: rgb(255, 0, 0); */
+  margin-bottom: 134px;
+}
+
+ul {
+  list-style: none;
   margin: 0;
   padding: 0;
 }
 
-body {
-  background-image: url(../img/background.png);
-  background-repeat: no-repeat;
-  background-size: 100%;
-  background-color: black;
-  font-family: 'Nunito Sans', sans-serif;
-  font-family: 'Open Sans', sans-serif;
+nav ul li {
+  display: inline;
+  margin-right: 50px;
 }
 
-header {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-  padding-left: 84px;
-  padding-right: 84px;
+li:last-child {
+  margin-right: 0;
 }
 
-main {
-  text-align: center;
-}
-
-h2 {
-  margin-bottom: 27px;
-  margin-top: 25px;
-  font-size: 64px;
+.logo {
+  font-family: "Open Sans";
+  font-style: normal;
   font-weight: 700;
-  color: white;
-  line-height: 87px;
+  font-size: 24px;
+  line-height: 33px;
+  /* identical to box height */
 
+  letter-spacing: 0.01em;
+  text-transform: capitalize;
+
+  /* Weiß */
+  /* padding: 1700px 0; */
+  color: #ffffff;
 }
 
-p {
+.nav-style {
+  font-family: "Open Sans";
+  font-style: normal;
   font-weight: 600;
   font-size: 18px;
+  line-height: 25px;
+  /* identical to box height */
+
+  color: #ffffff;
+}
+
+.search-text {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 23px;
+  opacity: 0.5;
+  color: #ffffff;
+}
+
+.container-explore {
+  margin: 0 auto;
+  max-width: 920.19px;
+  margin-bottom: 126px;
+}
+
+.text-explore {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  /* identical to box height */
+
+  letter-spacing: 6px;
+  text-transform: uppercase;
+  margin-left: 100px;
+  position: relative;
+
+  color: #ffc178;
+}
+
+.text-explore::before {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 72px;
+  background: #ffc178;
+  top: 11px;
+  left: -100px;
+}
+
+.main-title {
+  font-size: 88px;
+  font-weight: 400;
   color: white;
-  margin-bottom: 27px;
 }
 
-a {
+.follow-us {
+  position: absolute;
+  left: 79px;
+  top: 359px;
+}
+
+.follow-us ul {
+  display: flex;
+}
+
+.follow-us ul li {
+  margin-bottom: 20px;
+}
+
+.follow-us ul:first-child {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 25px;
+  /* identical to box height */
+
+  color: #ffffff;
+}
+
+.scroll {
+  text-align: center;
+  margin-bottom: 1150px;
+}
+
+.scroll-down {
+  position: relative;
   text-decoration: none;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 25px;
+  /* identical to box height */
+
+  color: #ffffff;
 }
 
-a:hover {
+.scroll-down:hover {
   text-decoration: underline;
 }
 
-.logo>a {
-  font-size: 24px;
+.scroll-down::after {
+  content: url(../img/arrow_downward_24px.png);
+  top: 0px;
+  left: 107px;
+  position: absolute;
+}
+
+.container-centering {
+  max-width: 76%;
+  margin: 0 auto;
+}
+
+.first-floor {
+  display: flex;
+  justify-content: space-between;
+  gap: 5em;
+  /* width: 100%; */
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.first-floor>* {
+  flex: 1 1 10em;
+  min-width: 300px;
+}
+
+.first-floor-text {
+  align-self: center;
+}
+
+h2 {
+  font-family: "Open Sans";
+  font-style: normal;
   font-weight: 700;
-  color: white;
+  font-size: 64px;
+  line-height: 87px;
+
+  color: #ffffff;
+  margin-bottom: 27px;
 }
 
-.links .links-menu li {
-  display: inline-block;
-  margin-right: 50px;
-  list-style: none;
+.first-floor-text .text-explore {
+  margin-bottom: 27px;
 }
 
-
-
-.links,
-.logo,
-.search {
-  margin-top: 58px;
-}
-
-
-
-.links .links-menu li a {
-  font-size: 18px;
+.first-floor-p {
+  font-family: "Open Sans";
+  font-style: normal;
   font-weight: 600;
-  color: white;
+  font-size: 18px;
+  line-height: 32px;
+  /* or 178% */
+  color: #ffffff;
+
+  margin-bottom: 27px;
 }
+
+.read-more {
+  position: relative;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  /* identical to box height */
+
+  /* Accent */
+
+  color: #fbd784;
+}
+
+.read-more::after {
+  content: url(../img/thisisit.png);
+  position: absolute;
+  left: 105px;
+  top: 2px;
+}
+
+.first-floor {
+  margin-bottom: 250px;
+}
+
+.first-floor-text>h2 {
+  max-width: 12ch;
+}
+
+.second-floor {
+  background-image: url("../img/image 2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0 auto;
+  margin-bottom: 226.64px;
+  /* padding: 292.535px 0; */
+  padding-top: 543.42px;
+  padding-bottom: 41.65px;
+  text-align: center;
+}
+
+.bromo {
+  margin-bottom: 24.11px;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  /* identical to box height */
+  display: inline-block;
+  letter-spacing: 6px;
+  text-transform: uppercase;
+
+  position: relative;
+  /* Accent */
+
+  color: #fbd784;
+}
+
+.bromo::before {
+  content: "";
+  width: 72px;
+  height: 2px;
+  background: #fbd784;
+  position: absolute;
+  left: -101px;
+  top: 12.5px;
+}
+
+.bromo::after {
+  content: "";
+  width: 72px;
+  height: 2px;
+  background: #fbd784;
+  position: absolute;
+  right: -95px;
+  top: 12.5px;
+}
+
+.second-floor-p {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 32px;
+  /* or 178% */
+
+  text-align: center;
+
+  color: #ffffff;
+
+  margin-bottom: 29px;
+}
+
+.third-floor-p {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+  /* or 178% */
+
+  color: #ffffff;
+}
+
+.third-floor {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap-reverse;
+  gap: 5em;
+  margin-bottom: 262.36px;
+}
+
+.third-floor-img {
+  min-width: 300px;
+}
+
+.third-floor-text-block {
+  align-self: center;
+}
+
+.margin1 {
+  margin-bottom: 32px;
+}
+
+.margin2 {
+  margin-bottom: 27px;
+}
+
+.fourth-floor {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 47.44px;
+}
+
+.ready-to-explore {
+  font-family: "DM sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 29px;
+  /* identical to box height */
+
+  letter-spacing: -0.3px;
+
+  color: #ffffff;
+  margin-right: 55.53px;
+}
+
+.button-style {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 22px;
+
+  color: #000000;
+
+  background-color: #ffa343;
+  border: none;
+  padding: 24px 72.88px 23.13px 69.47px;
+  border-radius: 8px;
+}
+
+.logo-big {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 65px;
+  letter-spacing: 0.01em;
+  text-transform: capitalize;
+
+  /* Weiß */
+
+  color: #ffffff;
+}
+
+.hr1 {
+  background: #ffffff;
+  mix-blend-mode: normal;
+  opacity: 0.3;
+  margin-bottom: 55.17px;
+}
+
+h3 {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 49px;
+  letter-spacing: -0.3px;
+
+  color: #ffffff;
+  margin-bottom: 50px;
+}
+
+input {
+  margin: 0;
+  border: none;
+  border-bottom: #ffffffaf 1.38px solid;
+  width: 100%;
+  mix-blend-mode: normal;
+  background: black;
+  padding: 28.09px 0 27.22px 0;
+}
+
+.button-size {
+  padding: 28.09px 29.96px 27.22px 30.63px;
+  border-radius: 8px 8px 0px 0px;
+}
+
+.footer-left-text {
+  display: inline-block;
+}
+
+::placeholder {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 20px;
+
+
+  letter-spacing: -0.204545px;
+
+  color: #ffffff;
+
+  mix-blend-mode: normal;
+  opacity: 0.5;
+  padding-left: 20px;
+}
+
+.input-form {
+  position: relative;
+}
+
+.button-move {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.gold {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+
+  letter-spacing: -0.231818px;
+
+  color: #ffd1a0;
+}
+
+.normal {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 19px;
+
+  letter-spacing: -0.204545px;
+
+  color: #ffffff;
+}
+
+.first-floor-footer {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 136.48px;
+}
+
+.footer-right-text {
+  display: flex;
+  width: 60%;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 2em;
+  row-gap: 5em;
+}
+
+/* .footer-right-text ul {
+  margin-right: 200px;
+} */
+
+.footer-right-text ul li {
+  margin-bottom: 22.5px;
+}
+
+.footer-right-text ul li:last-child {
+  margin-bottom: 0;
+}
+
+.second-floor-footer {
+  display: flex;
+  justify-content: space-between;
+  width: 95%;
+  margin: 0 auto;
+  margin-bottom: 160px;
+}
+
+.second-floor-footer ul li {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 20px;
+  /* identical to box height */
+
+  letter-spacing: -0.204545px;
+
+  color: #ffffff;
+  display: inline-block;
+
+  margin-right: 50px;
+}
+
+.copyright {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 32px;
+  /* identical to box height, or 178% */
+  text-align: center;
+  color: #ffffff;
+  opacity: 0.5;
+  margin-bottom: 118px;
+}
+
+.second-floor-text-block {
+  position: relative;
+}
+
+.left-arrow {
+  position: absolute;
+  left: 49.81px;
+  top: -44.66px;
+}
+
+.right-arrow {
+  position: absolute;
+  right: 49.81px;
+  top: -44.66px;
+}
+
+@media (max-width: 1200px) {
+  .text-explore {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .margin1 {
+    margin-bottom: 22px;
+  }
+
+  .main-title {
+    font-size: 68px;
+    font-weight: 300;
+  }
+
+  .container-explore {
+    margin-bottom: 63px;
+  }
+
+  .scroll {
+    margin-bottom: 250px;
+  }
+
+  h2 {
+    font-weight: 500;
+    font-size: 38px;
+    line-height: 50px;
+    /* margin-bottom: 20px; */
+  }
+
+  .second-floor-p {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 32px;
+    /* or 178% */
+
+    text-align: center;
+
+    color: #ffffff;
+
+    margin-bottom: 29px;
+  }
+
+  .first-floor-text>h2 {
+    max-width: none;
+    /* margin: 0 auto; */
+    text-align: center;
+  }
+
+  .first-floor-p {
+    width: 75%;
+    margin: 0 auto;
+  }
+
+  /* .footer-right-text {
+    justify-content: space-between;
+    width: 95%;
+    margin-top: 50px;
+  } */
+
+  .follow-us {
+    display: none;
+  }
+
+
+}
+
+/* @media (max-width: 820px) {
+} */
+
+/* @media (max-width: 390px) {
+} */
+
+/* @media (max-width:1200px) {
+
+  h2 {
+    margin-bottom: 20px;
+    margin-top: 17px;
+    font-size: 40px;
+    line-height: 50px;
+
+  }
+
+  p {
+    font-weight: 400;
+    font-size: 15px;
+    margin-bottom: 20px;
+  }
+
+  .top-before-title {
+    margin-left: 75px;
+    font-size: 15px;
+    letter-spacing: 5px;
+  }
+
+  .top-before-title::before {
+    width: 36px;
+    left: -50px;
+    top: 5px;
+  }
+
+  .aside {
+    margin: 200px 95px 0 60px;
+  }
+
+  .discover {
+    width: 90%;
+  }
+
+  .discover>h4 {
+    margin-left: 157px;
+    margin-top: 145px;
+    margin-bottom: 24px;
+  }
+
+  h1 {
+    font-size: 55px;
+    margin: 0 0 95px 105px;
+  }
+
+  .scroll-link-block {
+    margin-bottom: 350px;
+  }
+
+  .scroll-link {
+    font-size: 15px;
+    font-weight: 400;
+  }
+
+  .scroll-link::after {
+    left: 90px;
+    width: 12px;
+    height: 18px;
+    top: 3px;
+  }
+
+  .container-nusa-tengara {
+    width: 90%;
+    margin: 160px auto;
+  }
+
+  .container-nusa-tengara-info {
+    width: 30%;
+  }
+
+  .container-nusa-tengara-img {
+    width: 68%;
+  }
+
+  .read-more-link {
+    font-size: 15px;
+  }
+
+  .read-more-link::after {
+    left: 85px;
+    width: 18px;
+    height: 12px;
+    top: 5px;
+  }
+
+  .container-bromo {
+    width: 90%;
+    padding-top: 280px;
+  }
+
+  .container-indonesian-culture {
+    width: 90%;
+  }
+
+  .indonesian-culture-title {
+    width: 100%;
+    margin-top: 170px;
+    margin-bottom: 170px;
+  }
+
+  label {
+    font-size: 16px;
+    margin: 0 36px 0 0;
+  }
+
+  .get-started {
+    padding: 16px 54px;
+    border-radius: 6px;
+    font-size: 14px;
+  }
+
+  .indonesian-culture-footer {
+    margin-bottom: 42px;
+  }
+
+  .biglogo {
+    font-size: 37px;
+    margin-bottom: 41px;
+  }
+
+  .biglogo:hover {
+    font-size: 40px;
+  }
+
+  footer {
+    width: 90%;
+    padding-top: 37px;
+    padding-bottom: 80px;
+  }
+
+  .email-input>h3 {
+    font-size: 28px;
+    margin-bottom: 37px;
+  }
+
+  input[type=email] {
+    width: 71%;
+    padding-left: 11px;
+    padding-bottom: 22px;
+    font-size: 17px;
+  }
+
+  input[type=email]::placeholder {
+    font-size: 12px;
+  }
+
+  .button-footer {
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    padding: 21px 23px;
+  }
+
+  .link-service,
+  .link-about,
+  .link-help {
+    margin-top: 28px;
+  }
+
+  .head-links ul li {
+    font-size: 16px;
+    line-height: 33px;
+  }
+
+  .head-links ul li a {
+    font-size: 15px;
+    line-height: 33px;
+  }
+
+  .terms ul li {
+    margin: 102px 30px 120px 30px;
+  }
+
+  .terms ul li a {
+    font-size: 13px;
+  }
+
+  .media-links ul li {
+    margin-right: 37px;
+    margin-top: 102px;
+  }
+
+  .footer-copyright {
+    font-size: 16px;
+  }
+
+}
+
+@media (max-width:1000px) {
+  h2 {
+    margin-bottom: 14px;
+    margin-top: 14px;
+    font-size: 32px;
+    line-height: 45px;
+  }
+
+  p {
+    font-weight: 400;
+    font-size: 12px;
+    margin-bottom: 14px;
+  }
+
+  .top-before-title {
+    margin-left: 55px;
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 4px;
+  }
+
+  .top-before-title::before {
+    width: 36px;
+    left: -50px;
+    top: 5px;
+  }
+
+  .aside {
+    margin: 134px 62px 0 40px;
+  }
+
+  .discover {
+    width: 100%;
+    text-align: center;
+  }
+
+  .discover>h4 {
+    margin-left: 130px;
+    margin-top: 100px;
+    margin-bottom: 20px;
+    text-align: left;
+  }
+
+  h1 {
+    font-size: 44px;
+    margin: 0 0 63px 80px;
+  }
+
+  .scroll-link-block {
+    margin-bottom: 250px;
+  }
+
+  .scroll-link {
+    font-size: 12px;
+    font-weight: 400;
+  }
+
+  .scroll-link::after {
+    left: 70px;
+    width: 8px;
+    height: 12px;
+    top: 3px;
+  }
+
+  .container-nusa-tengara {
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 98%;
+    margin: 115px auto;
+  }
+
+  .container-nusa-tengara-info {
+    width: 24%;
+  }
+
+  .container-nusa-tengara-img {
+    width: 73%;
+  }
+
+  .read-more-link {
+    font-size: 14px;
+  }
+
+  .read-more-link::after {
+    width: 14px;
+    height: 10px;
+    top: 5px;
+    left: 80px;
+  }
+
+  .container-bromo {
+    width: 100%;
+    padding-top: 230px;
+    padding-bottom: 41px;
+  }
+
+  .container-indonesian-culture {
+    width: 95%;
+  }
+
+  .indonesian-culture-title {
+    align-items: flex-start;
+    width: 100%;
+    margin-top: 110px;
+    margin-bottom: 120px;
+  }
+
+  label {
+    font-size: 14px;
+    margin: 0 25px 0 0;
+  }
+
+  .get-started {
+    padding: 12px 36px;
+    border-radius: 4px;
+    font-size: 12px;
+  }
+
+  .indonesian-culture-footer {
+    margin-bottom: 35px;
+  }
+
+  .biglogo {
+    font-size: 30px;
+    margin-bottom: 35px;
+  }
+
+  .biglogo:hover {
+    font-size: 31px;
+  }
+
+  footer {
+    width: 95%;
+    padding-top: 30px;
+    padding-bottom: 60px;
+  }
+
+  .email-input>h3 {
+    font-size: 20px;
+    margin-bottom: 25px;
+  }
+
+  input[type=email] {
+    width: 75%;
+    padding-left: 8px;
+    padding-bottom: 15px;
+    font-size: 12px;
+  }
+
+  input[type=email]::placeholder {
+    font-size: 10px;
+  }
+
+  .button-footer {
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    padding: 14px 15px;
+  }
+
+  .link-service,
+  .link-about,
+  .link-help {
+    margin-top: 17px;
+  }
+
+  .head-links ul li {
+    font-size: 12px;
+    line-height: 22px;
+  }
+
+  .head-links ul li a {
+    font-size: 12px;
+    line-height: 22px;
+  }
+
+  .terms ul li {
+    margin: 68px 20px 80px 20px;
+  }
+
+  .terms ul li a {
+    font-size: 12px;
+  }
+
+  .media-links ul li {
+    margin-right: 25px;
+    margin-top: 68px;
+  }
+
+  .footer-copyright {
+    font-size: 14px;
+  }
+}
+
+@media (max-width:820px) {
+  header {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .links .horizontal li {
+    margin-right: 15px;
+  }
+
+  .links,
+  .logo,
+  .search {
+    margin-top: 29px;
+  }
+
+  .logo>a {
+    font-size: 15px;
+  }
+
+  .links .horizontal li a {
+    font-size: 12px;
+  }
+
+  .logolinks:hover {
+    font-weight: 650;
+    font-size: 16px;
+  }
+
+  .searchlink {
+    font-size: 12px;
+  }
+
+  .search::before {
+    width: 15px;
+    height: 15px;
+    background-size: 100%;
+    left: -18px;
+    top: 4px;
+  }
+
+  .read-more-link::after {
+    left: 69px;
+  }
+
+  .read-more-link {
+    font-size: 12px;
+  }
+
+  h2 {
+    margin-bottom: 15px;
+    margin-top: 12px;
+    font-size: 20px;
+    line-height: 25px;
+  }
+
+  .aside {
+    margin: 80px 20px 0 15px;
+  }
+
+  .discover {
+    width: 100%;
+  }
+
+  .discover>h4 {
+    margin-left: 100px;
+    margin-top: 75px;
+  }
+
+  h1 {
+    font-size: 45px;
+    margin: 0 0 70px 40px;
+  }
+
+  .scroll-link-block {
+    margin-bottom: 150px;
+  }
+
+  .container-nusa-tengara {
+    width: 90%;
+    margin: 100px auto;
+  }
+
+  .container-nusa-tengara-info,
+  .indonesian-culture-info {
+    width: 50%;
+  }
+
+  .container-nusa-tengara-img,
+  .indonesian-culture-img {
+    width: 49%;
+  }
+
+  .container-nusa-tengara-img>img {
+    width: 100%;
+  }
+
+  .indonesian-culture-img>img {
+    width: 100%;
+  }
+
+  .container-bromo {
+    padding-top: 150px;
+  }
+
+  .slider>a {
+    margin: 0 25px 0 25px;
+    width: 10px;
+    height: 15px;
+  }
+
+  .slider>a>img {
+    width: 100%;
+  }
+
+  span {
+    font-size: 10px;
+    letter-spacing: 4px;
+  }
+
+  span::before {
+    width: 36px;
+    top: 7px;
+    left: -55px;
+  }
+
+  span::after {
+    width: 36px;
+    top: 7px;
+    right: -55px;
+  }
+
+  .container-indonesian-culture {
+    width: 90%;
+  }
+
+  .get-started {
+    padding: 8px 12px;
+    border-radius: 2px;
+    font-size: 12px;
+  }
+
+  label {
+    font-size: 12px;
+    margin: 0 12px 0 0;
+  }
+
+  .biglogo {
+    font-size: 15px;
+    margin-bottom: 20px;
+  }
+
+  .biglogo:hover {
+    font-size: 16px;
+  }
+
+  form {
+    width: 95%;
+  }
+
+  .email-input>h3 {
+    font-size: 15px;
+    margin-bottom: 20px;
+  }
+
+  input[type=email] {
+    padding-left: 5px;
+    padding-bottom: 10px;
+  }
+
+  .button-footer {
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+    padding: 8px 10px;
+  }
+
+  .button-footer>img {
+    width: 100%;
+  }
+
+  .terms ul li {
+    margin: 50px 10px 50px 10px;
+  }
+
+  .media-links ul li {
+    margin-right: 10px;
+    margin-top: 50px;
+  }
+
+  .footer-copyright {
+    font-size: 12px;
+  }
+}
+
+@media (max-width:390px) {
+  .logo {
+    margin-top: 0px;
+  }
+
+  .aside {
+    display: none;
+  }
+
+  .links {
+    display: none;
+  }
+
+  .burger {
+    display: block;
+    margin-right: 30px;
+  }
+
+  .burger,
+  .search {
+    display: inline-block;
+  }
+
+  header {
+    align-items: center;
+  }
+
+  .mobile {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 10px;
+  }
+
+  .search {
+    margin-top: 0;
+  }
+
+  .button-footer {
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+    padding: 3px 5px;
+  }
+
+  .scroll-link-block {
+    margin-bottom: 50px;
+  }
+
+  .container-nusa-tengara {
+    margin: 50px auto;
+  }
+
+  .indonesian-culture-title {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  .container-bromo {
+    padding-top: 110px;
+  }
+
+  form {
+    width: 100%;
+  }
+
+  .button-footer>img {
+    width: 5px;
+    height: 8px;
+  }
+
+  .terms ul li {
+    display: block;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .terms ul {
+    margin-top: 40px;
+  }
+
+  footer {
+    padding-bottom: 10px;
+  }
+
+  .footer-copyright {
+    margin-top: 30px;
+  }
+} */

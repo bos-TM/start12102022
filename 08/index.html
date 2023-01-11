@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+  <div class="background-1">
+    <header>
+      <a href="#"><img src="./img/Лого.png" alt="" class="logo"></a>
+      <ul class="header-info">
+        <li><a href="#">ПРО НАС</a></li>
+        <li><a href="#">ХЛІБОБУЛОЧНІ ВИРОБИ</a></li>
+        <li><a href="#">КОНДИТЕРСЬКІ ВИРОБИ</a></li>
+        <li><a href="#">НАПІВФАБРИКАТИ</a></li>
+        <li><a href="#">ТОРТИ</a></li>
+      </ul>
+      <div>
+        <button class="burger"
+          onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))"
+          aria-label="Main Menu">
+          <svg width="100" height="100" viewBox="0 0 100 100">
+            <path class="line0 line1"
+              d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+            <path class="line0 line2" d="M 20,50 H 80" />
+            <path class="line0 line3"
+              d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+          </svg>
+        </button>
+        <a href="#" class="shopping-baket-link">
+          <img src="./img/shopping-basket 1.png" alt="" class="shopping-basket">
+          <span class="money">9 765 грн.</span>
+        </a>
+      </div>
+    </header>
+    <div class="container-centering">
+      <h1>КОЗІЇВСЬКА<br>ХЛІБОПЕКАРНЯ</h1>
+      <p class="first-floor-p">
+        Cпробував наш хліб та кондитерські вироби, ви<br>зможете насолодитись смачною, натуральною та<br>якісною їжою,
+        яка
+        необхідна нам кожен день.
+      </p>
+      <button class="look">ПОСМОТРЕТЬ ТОВАРЫ</button>
+    </div>
+  </div>
+
+  <div class="second-floor">
+    <h2 class="second-floor-h2">ЧОМУ ОБИРАЮТЬ НАС</h2>
+    <img src="./img/Group 7.png" alt="" class="line">
+    <div class="second-floor-grid">
+      <div>
+        <img src="./img/oven.png" alt="" class="second-floor-image">
+        <hr>
+        <p class="second-floor-p">Дотримання правил<br>технологічних<br>процесів</p>
+      </div>
+      <div>
+        <img src="./img/electric-mixer.png" alt="" class="second-floor-image">
+        <hr>
+        <p class="second-floor-p">Працюють тільки<br>досвідчені<br>кваліфіковані фахівці</p>
+      </div>
+      <div>
+        <img src="./img/roller.png" alt="" class="second-floor-image">
+        <hr>
+        <p class="second-floor-p">Не використовуємо<br>розпущувачі тіста</p>
+      </div>
+      <div>
+        <img src="./img/wheat-sack.png" alt="" class="second-floor-image">
+        <hr>
+        <p class="second-floor-p">Продукція готується<br>з борошна власного<br>виробництва </p>
+      </div>
+    </div>
+  </div>
+  <div class="third-floor">
+    <h2 class="third-floor-h2">КАТАЛОГ ПРОДУКЦІЇ</h2>
+    <div class="buttons">
+      <button>Уся продукція</button>
+      <button>Хліб</button>
+      <button>Булки</button>
+      <button>Печиво</button>
+      <button>Слойки</button>
+      <button>Торти</button>
+    </div>
+
+    <div class="third-floor-products">
+
+      <div class="bread">
+        <h3>Хліб Білий</h3>
+        <img src="./img/20210416_120448 1.png" alt="">
+        <p>вырабатывается из смеси муки ржаной обдирной и пшеничной первого сорта</p>
+        <div class="space-between">
+          <img src="./img/Arrow 3.png" alt="">
+          <button>1000 гр.</button>
+        </div>
+      </div>
+
+      <div class="bread">
+        <h3>Хліб Дарницький</h3>
+        <img src="./img/20210416_120448 1 (1).png" alt="">
+        <p>вырабатывается из смеси муки ржаной обдирной и пшеничной первого сорта</p>
+        <div class="space-between">
+          <img src="./img/Arrow 3.png" alt="">
+          <button>1000 гр.</button>
+        </div>
+      </div>
+
+      <div class="bread">
+        <h3>Хліб Подовий</h3>
+        <img src="./img/20210416_120448 1 (2).png" alt="">
+        <p>вырабатывается из смеси муки ржаной обдирной и пшеничной первого сорта</p>
+        <div class="space-between">
+          <img src="./img/Arrow 3.png" alt="">
+          <button>1000 гр.</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="fourth-floor">
+    <h2 class="fourth-floor-h2">ПРО НАС</h2>
+    <img src="./img/Group 7.png" alt="" class="line">
+    <div class="fourth-floor-text-div">
+      <p class="fourth-floor-p-1">Хлібопекарський комплекс розташований в екологічно чистому районі, а саме на
+        Краснокутщині. На протязі 20 років
+        Козіївський хлібопекарський комплекс виробляє найсмачніші якісні хлібобулочні та кондитерські вироби.
+      </p>
+      <p class="fourth-floor-p-2">
+        Спробував наш хліб та кондитерські вироби, Ви зможете насолодитись смачною, натуральною та якісною їжою, яка
+        необхідна нам кожен день.
+      </p>
+      <span class="fourth-floor-span"><i>Від нашого села, з душею</i></span>
+    </div>
+  </div>
+  <div class="fifth-floor">
+    <h2 class="fifth-floor-h2">НАША ПРОДУКЦІЯ</h2>
+
+    <div class="grid-images">
+      <img src="./img/img1.png" alt="" class="img1">
+      <img src="./img/img2.png" alt="" class="img2">
+      <img src="./img/img3.png" alt="" class="img3">
+      <img src="./img/img4.png" alt="" class="img4">
+      <img src="./img/img5.png" alt="" class="img5">
+    </div>
+
+
+
+  </div>
+  <footer>
+    <div>
+      <img src="./img/logosmall.png" alt="" class="small-logo">
+      <div class="footer-middle">
+        <h6 class="footer-h6">Ми знаходимось:</h6>
+        <p class="footer-p">Харківська обл. Краснокутський район, с. Козіївка, вул. Спортивна2</p>
+      </div>
+      <div class="tel-numbers">
+        <h4 class="tel">+38 (098) 83-61-107</h4>
+        <h4 class="tel">+38 (099) 06-32-645</h4>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
