@@ -3,7 +3,6 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans&display=swap");
 
 * {
-  /* font-family: "Poppins", sans-serif; */
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -16,13 +15,60 @@
   clear: both;
 }
 
+.burger {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  display: none;
+  padding: 0;
+}
+
+.line0 {
+  fill: none;
+  stroke: rgb(255, 255, 255);
+  stroke-width: 6;
+  transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
+    stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.line1 {
+  stroke-dasharray: 60 207;
+  stroke-width: 6;
+}
+
+.line2 {
+  stroke-dasharray: 60 60;
+  stroke-width: 6;
+}
+
+.line3 {
+  stroke-dasharray: 60 207;
+  stroke-width: 6;
+}
+
+.opened .line1 {
+  stroke-dasharray: 90 207;
+  stroke-dashoffset: -134;
+  stroke-width: 6;
+}
+
+.opened .line2 {
+  stroke-dasharray: 1 60;
+  stroke-dashoffset: -30;
+  stroke-width: 6;
+}
+
+.opened .line3 {
+  stroke-dasharray: 90 207;
+  stroke-dashoffset: -134;
+  stroke-width: 6;
+}
+
+/* ******** */
+
 body {
   margin: 0;
   padding: 0;
-  /* background-image: url("../img/BG\ Hero.png"), url("../img/Rectangle 1.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-color: black; */
   background-image: url("../img/Background.png");
   background-repeat: no-repeat;
   background-size: 100%;
@@ -38,7 +84,6 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* background: rgb(255, 0, 0); */
   margin-bottom: 134px;
 }
 
@@ -63,13 +108,8 @@ li:last-child {
   font-weight: 700;
   font-size: 24px;
   line-height: 33px;
-  /* identical to box height */
-
   letter-spacing: 0.01em;
   text-transform: capitalize;
-
-  /* Weiß */
-  /* padding: 1700px 0; */
   color: #ffffff;
 }
 
@@ -79,8 +119,6 @@ li:last-child {
   font-weight: 600;
   font-size: 18px;
   line-height: 25px;
-  /* identical to box height */
-
   color: #ffffff;
 }
 
@@ -106,13 +144,10 @@ li:last-child {
   font-weight: 700;
   font-size: 18px;
   line-height: 25px;
-  /* identical to box height */
-
   letter-spacing: 6px;
   text-transform: uppercase;
   margin-left: 100px;
   position: relative;
-
   color: #ffc178;
 }
 
@@ -154,8 +189,6 @@ li:last-child {
   font-weight: 600;
   font-size: 18px;
   line-height: 25px;
-  /* identical to box height */
-
   color: #ffffff;
 }
 
@@ -172,8 +205,6 @@ li:last-child {
   font-weight: 600;
   font-size: 18px;
   line-height: 25px;
-  /* identical to box height */
-
   color: #ffffff;
 }
 
@@ -197,7 +228,6 @@ li:last-child {
   display: flex;
   justify-content: space-between;
   gap: 5em;
-  /* width: 100%; */
   flex-wrap: wrap;
   align-items: center;
 }
@@ -217,12 +247,12 @@ h2 {
   font-weight: 700;
   font-size: 64px;
   line-height: 87px;
-
   color: #ffffff;
   margin-bottom: 27px;
 }
 
-.first-floor-text .text-explore {
+.first-floor-text,
+.text-explore {
   margin-bottom: 27px;
 }
 
@@ -232,7 +262,6 @@ h2 {
   font-weight: 600;
   font-size: 18px;
   line-height: 32px;
-  /* or 178% */
   color: #ffffff;
 
   margin-bottom: 27px;
@@ -245,10 +274,6 @@ h2 {
   font-weight: 700;
   font-size: 18px;
   line-height: 25px;
-  /* identical to box height */
-
-  /* Accent */
-
   color: #fbd784;
 }
 
@@ -273,7 +298,6 @@ h2 {
   background-size: cover;
   margin: 0 auto;
   margin-bottom: 226.64px;
-  /* padding: 292.535px 0; */
   padding-top: 543.42px;
   padding-bottom: 41.65px;
   text-align: center;
@@ -286,14 +310,10 @@ h2 {
   font-weight: 700;
   font-size: 18px;
   line-height: 25px;
-  /* identical to box height */
   display: inline-block;
   letter-spacing: 6px;
   text-transform: uppercase;
-
   position: relative;
-  /* Accent */
-
   color: #fbd784;
 }
 
@@ -323,12 +343,8 @@ h2 {
   font-weight: 600;
   font-size: 18px;
   line-height: 32px;
-  /* or 178% */
-
   text-align: center;
-
   color: #ffffff;
-
   margin-bottom: 29px;
 }
 
@@ -338,15 +354,12 @@ h2 {
   font-weight: 400;
   font-size: 18px;
   line-height: 32px;
-  /* or 178% */
-
   color: #ffffff;
 }
 
 .third-floor {
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap-reverse;
   gap: 5em;
   margin-bottom: 262.36px;
 }
@@ -379,10 +392,7 @@ h2 {
   font-weight: 400;
   font-size: 18px;
   line-height: 29px;
-  /* identical to box height */
-
   letter-spacing: -0.3px;
-
   color: #ffffff;
   margin-right: 55.53px;
 }
@@ -393,9 +403,7 @@ h2 {
   font-weight: 700;
   font-size: 17px;
   line-height: 22px;
-
   color: #000000;
-
   background-color: #ffa343;
   border: none;
   padding: 24px 72.88px 23.13px 69.47px;
@@ -410,9 +418,6 @@ h2 {
   line-height: 65px;
   letter-spacing: 0.01em;
   text-transform: capitalize;
-
-  /* Weiß */
-
   color: #ffffff;
 }
 
@@ -460,12 +465,8 @@ input {
   font-weight: 400;
   font-size: 15px;
   line-height: 20px;
-
-
   letter-spacing: -0.204545px;
-
   color: #ffffff;
-
   mix-blend-mode: normal;
   opacity: 0.5;
   padding-left: 20px;
@@ -486,9 +487,7 @@ input {
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
-
   letter-spacing: -0.231818px;
-
   color: #ffd1a0;
 }
 
@@ -497,9 +496,7 @@ input {
   font-style: normal;
   font-weight: 400;
   font-size: 19px;
-
   letter-spacing: -0.204545px;
-
   color: #ffffff;
 }
 
@@ -517,10 +514,6 @@ input {
   gap: 2em;
   row-gap: 5em;
 }
-
-/* .footer-right-text ul {
-  margin-right: 200px;
-} */
 
 .footer-right-text ul li {
   margin-bottom: 22.5px;
@@ -544,13 +537,9 @@ input {
   font-weight: 400;
   font-size: 15px;
   line-height: 20px;
-  /* identical to box height */
-
   letter-spacing: -0.204545px;
-
   color: #ffffff;
   display: inline-block;
-
   margin-right: 50px;
 }
 
@@ -560,7 +549,6 @@ input {
   font-weight: 600;
   font-size: 18px;
   line-height: 32px;
-  /* identical to box height, or 178% */
   text-align: center;
   color: #ffffff;
   opacity: 0.5;
@@ -583,743 +571,335 @@ input {
   top: -44.66px;
 }
 
+@media (max-width: 1720px) {
+  .br-ipad {
+    display: none;
+  }
+
+
+}
+
 @media (max-width: 1200px) {
-  .text-explore {
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 20px;
-  }
-
-  .margin1 {
-    margin-bottom: 22px;
-  }
-
-  .main-title {
-    font-size: 68px;
-    font-weight: 300;
-  }
-
-  .container-explore {
-    margin-bottom: 63px;
+  .follow-us {
+    left: 24px;
   }
 
   .scroll {
-    margin-bottom: 250px;
+    margin-bottom: 100px
+  }
+
+  .text-explore::before {
+    left: -42px;
+    width: 32px;
+  }
+
+  .text-explore {
+    font-size: 16px;
+    margin-bottom: 14px;
+    text-align: left;
+    margin-left: 54px;
+  }
+
+  .third-floor {
+    margin-bottom: 133px;
+  }
+
+  h2 {
+    font-size: 38px;
+    line-height: 49px;
+    margin-bottom: 24px;
+  }
+
+
+  .container-centering {
+    max-width: 90%;
+  }
+}
+
+
+@media (max-width: 820px) {
+  .burger {
+    display: flex;
+  }
+
+  .search,
+  .nav-style {
+    display: none;
+  }
+
+  header {
+    padding: 10px 44px;
+    margin-bottom: 20px;
+  }
+
+  .logo,
+  .logo-big {
+    font-size: 20px;
+  }
+
+  .follow-us {
+    top: 100px;
+  }
+
+  .follow-us ul li {
+    margin-bottom: 16px;
+  }
+
+  .container-explore {
+    max-width: 82%;
+    /* margin-bottom: 43px; */
+  }
+
+  .text-explore::before {
+    left: -42px;
+    width: 32px;
+  }
+
+  .main-title {
+    text-align: center;
+    font-size: 48px;
+  }
+
+  .scroll {
+    margin-bottom: 230px
+  }
+
+  .container-centering {
+    max-width: 82%;
+  }
+
+  .first-floor-text>h2 {
+    font-size: 37px;
+    /* text-align: center; */
+    margin: 0 10px auto;
+    max-width: none;
+  }
+
+  .first-floor-p {
+    padding: 10px;
+  }
+
+  .first-floor {
+    margin-bottom: 37px;
+  }
+
+  .second-floor {
+    background-size: contain;
+    padding-top: 190px;
+    margin-bottom: 0;
+  }
+
+  .third-floor {
+    flex-wrap: wrap-reverse;
+  }
+
+  .bromo::before,
+  .bromo::after {
+    width: 32px;
+  }
+
+  .bromo::before {
+    left: -48px;
+  }
+
+  .bromo::after {
+    right: -48px;
+  }
+
+  .second-floor-p {
+    text-align: center;
+    font-size: 12px;
+    line-height: 15px;
+    margin-bottom: 15px;
+  }
+
+  .third-floor {
+    gap: 2em;
+    margin-bottom: 40px;
+    justify-content: center;
+  }
+
+  .br-text {
+    display: none;
+  }
+
+  .third-floor-img {
+    width: 100%;
+  }
+
+  .third-floor-text-block {
+    text-align: center;
+  }
+}
+
+@media (max-width: 400px) {
+
+  header {
+    margin: 0;
+  }
+
+  .follow-us {
+    left: 14px;
+    top: 85px;
+  }
+
+  .follow-us ul li {
+    margin-bottom: 10px;
+  }
+
+  .container-explore {
+    max-width: 290px;
+    margin-bottom: 43px;
+  }
+
+  .text-explore::before {
+    left: -42px;
+    width: 32px;
+  }
+
+  .text-explore {
+    margin-left: 54px;
+    font-size: 12px;
+    line-height: 23px;
+    letter-spacing: 2px;
+    /* margin-bottom: 14px; */
+  }
+
+  .main-title {
+    text-align: center;
+    font-size: 34px;
+    line-height: 40px;
+  }
+
+  .scroll {
+    margin-bottom: 50px
+  }
+
+  .scroll-down {
+    font-weight: 400;
+    font-size: 15px;
+  }
+
+  .scroll-down::after {
+    left: 91px;
+  }
+
+  .first-floor {
+    gap: 2em;
+  }
+
+  .first-floor-text>h2 {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 43px;
+    text-align: center;
+    margin: 0 10px auto;
+    max-width: none;
+  }
+
+  .first-floor-p {
+    text-align: center;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 25px;
+    margin-bottom: 14px;
+  }
+
+  .second-floor {
+    background-size: contain;
+    padding-top: 56.4px;
+    margin-bottom: 0;
+  }
+
+  .left-arrow {
+    left: 20px;
+    top: 0;
+  }
+
+  .right-arrow {
+    right: 20px;
+    top: 0;
   }
 
   h2 {
     font-weight: 500;
-    font-size: 38px;
-    line-height: 50px;
-    /* margin-bottom: 20px; */
+    font-size: 27px;
+    line-height: 40px;
   }
 
-  .second-floor-p {
-    font-family: "Open Sans";
-    font-style: normal;
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 32px;
-    /* or 178% */
-
+  .second-floor-p,
+  .third-floor-p {
     text-align: center;
-
-    color: #ffffff;
-
-    margin-bottom: 29px;
+    font-size: 16px;
+    line-height: 26px;
   }
 
-  .first-floor-text>h2 {
-    max-width: none;
-    /* margin: 0 auto; */
+  .third-floor {
+    gap: 2em;
+    margin-bottom: 40px;
+  }
+
+  .third-floor-img {
+    width: 100%;
+  }
+
+  .third-floor-text-block {
     text-align: center;
   }
 
-  .first-floor-p {
-    width: 75%;
-    margin: 0 auto;
-  }
-
-  /* .footer-right-text {
-    justify-content: space-between;
-    width: 95%;
-    margin-top: 50px;
-  } */
-
-  .follow-us {
-    display: none;
-  }
-
-
-}
-
-/* @media (max-width: 820px) {
-} */
-
-/* @media (max-width: 390px) {
-} */
-
-/* @media (max-width:1200px) {
-
-  h2 {
-    margin-bottom: 20px;
-    margin-top: 17px;
-    font-size: 40px;
-    line-height: 50px;
-
-  }
-
-  p {
-    font-weight: 400;
-    font-size: 15px;
-    margin-bottom: 20px;
-  }
-
-  .top-before-title {
-    margin-left: 75px;
-    font-size: 15px;
-    letter-spacing: 5px;
-  }
-
-  .top-before-title::before {
-    width: 36px;
-    left: -50px;
-    top: 5px;
-  }
-
-  .aside {
-    margin: 200px 95px 0 60px;
-  }
-
-  .discover {
-    width: 90%;
-  }
-
-  .discover>h4 {
-    margin-left: 157px;
-    margin-top: 145px;
-    margin-bottom: 24px;
-  }
-
-  h1 {
-    font-size: 55px;
-    margin: 0 0 95px 105px;
-  }
-
-  .scroll-link-block {
-    margin-bottom: 350px;
-  }
-
-  .scroll-link {
-    font-size: 15px;
-    font-weight: 400;
-  }
-
-  .scroll-link::after {
-    left: 90px;
-    width: 12px;
-    height: 18px;
-    top: 3px;
-  }
-
-  .container-nusa-tengara {
-    width: 90%;
-    margin: 160px auto;
-  }
-
-  .container-nusa-tengara-info {
-    width: 30%;
-  }
-
-  .container-nusa-tengara-img {
-    width: 68%;
-  }
-
-  .read-more-link {
-    font-size: 15px;
-  }
-
-  .read-more-link::after {
-    left: 85px;
-    width: 18px;
-    height: 12px;
-    top: 5px;
-  }
-
-  .container-bromo {
-    width: 90%;
-    padding-top: 280px;
-  }
-
-  .container-indonesian-culture {
-    width: 90%;
-  }
-
-  .indonesian-culture-title {
-    width: 100%;
-    margin-top: 170px;
-    margin-bottom: 170px;
-  }
-
-  label {
-    font-size: 16px;
-    margin: 0 36px 0 0;
-  }
-
-  .get-started {
-    padding: 16px 54px;
-    border-radius: 6px;
-    font-size: 14px;
-  }
-
-  .indonesian-culture-footer {
-    margin-bottom: 42px;
-  }
-
-  .biglogo {
-    font-size: 37px;
-    margin-bottom: 41px;
-  }
-
-  .biglogo:hover {
-    font-size: 40px;
-  }
-
-  footer {
-    width: 90%;
-    padding-top: 37px;
-    padding-bottom: 80px;
-  }
-
-  .email-input>h3 {
-    font-size: 28px;
-    margin-bottom: 37px;
-  }
-
-  input[type=email] {
-    width: 71%;
-    padding-left: 11px;
-    padding-bottom: 22px;
-    font-size: 17px;
-  }
-
-  input[type=email]::placeholder {
-    font-size: 12px;
-  }
-
-  .button-footer {
-    border-top-left-radius: 6px;
-    border-top-right-radius: 6px;
-    padding: 21px 23px;
-  }
-
-  .link-service,
-  .link-about,
-  .link-help {
-    margin-top: 28px;
-  }
-
-  .head-links ul li {
-    font-size: 16px;
-    line-height: 33px;
-  }
-
-  .head-links ul li a {
-    font-size: 15px;
-    line-height: 33px;
-  }
-
-  .terms ul li {
-    margin: 102px 30px 120px 30px;
-  }
-
-  .terms ul li a {
-    font-size: 13px;
-  }
-
-  .media-links ul li {
-    margin-right: 37px;
-    margin-top: 102px;
-  }
-
-  .footer-copyright {
-    font-size: 16px;
-  }
-
-}
-
-@media (max-width:1000px) {
-  h2 {
-    margin-bottom: 14px;
-    margin-top: 14px;
-    font-size: 32px;
-    line-height: 45px;
-  }
-
-  p {
-    font-weight: 400;
-    font-size: 12px;
-    margin-bottom: 14px;
-  }
-
-  .top-before-title {
-    margin-left: 55px;
-    font-size: 10px;
-    font-weight: 600;
-    letter-spacing: 4px;
-  }
-
-  .top-before-title::before {
-    width: 36px;
-    left: -50px;
-    top: 5px;
-  }
-
-  .aside {
-    margin: 134px 62px 0 40px;
-  }
-
-  .discover {
-    width: 100%;
-    text-align: center;
-  }
-
-  .discover>h4 {
-    margin-left: 130px;
-    margin-top: 100px;
-    margin-bottom: 20px;
-    text-align: left;
-  }
-
-  h1 {
-    font-size: 44px;
-    margin: 0 0 63px 80px;
-  }
-
-  .scroll-link-block {
-    margin-bottom: 250px;
-  }
-
-  .scroll-link {
-    font-size: 12px;
-    font-weight: 400;
-  }
-
-  .scroll-link::after {
-    left: 70px;
-    width: 8px;
-    height: 12px;
-    top: 3px;
-  }
-
-  .container-nusa-tengara {
-    justify-content: space-between;
-    align-items: flex-start;
-    width: 98%;
-    margin: 115px auto;
-  }
-
-  .container-nusa-tengara-info {
-    width: 24%;
-  }
-
-  .container-nusa-tengara-img {
-    width: 73%;
-  }
-
-  .read-more-link {
-    font-size: 14px;
-  }
-
-  .read-more-link::after {
-    width: 14px;
-    height: 10px;
-    top: 5px;
-    left: 80px;
-  }
-
-  .container-bromo {
-    width: 100%;
-    padding-top: 230px;
-    padding-bottom: 41px;
-  }
-
-  .container-indonesian-culture {
-    width: 95%;
-  }
-
-  .indonesian-culture-title {
-    align-items: flex-start;
-    width: 100%;
-    margin-top: 110px;
-    margin-bottom: 120px;
-  }
-
-  label {
-    font-size: 14px;
-    margin: 0 25px 0 0;
-  }
-
-  .get-started {
-    padding: 12px 36px;
-    border-radius: 4px;
-    font-size: 12px;
-  }
-
-  .indonesian-culture-footer {
-    margin-bottom: 35px;
-  }
-
-  .biglogo {
-    font-size: 30px;
-    margin-bottom: 35px;
-  }
-
-  .biglogo:hover {
-    font-size: 31px;
-  }
-
-  footer {
-    width: 95%;
-    padding-top: 30px;
-    padding-bottom: 60px;
-  }
-
-  .email-input>h3 {
-    font-size: 20px;
-    margin-bottom: 25px;
-  }
-
-  input[type=email] {
-    width: 75%;
-    padding-left: 8px;
-    padding-bottom: 15px;
-    font-size: 12px;
-  }
-
-  input[type=email]::placeholder {
-    font-size: 10px;
-  }
-
-  .button-footer {
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
-    padding: 14px 15px;
-  }
-
-  .link-service,
-  .link-about,
-  .link-help {
-    margin-top: 17px;
-  }
-
-  .head-links ul li {
-    font-size: 12px;
-    line-height: 22px;
-  }
-
-  .head-links ul li a {
-    font-size: 12px;
-    line-height: 22px;
-  }
-
-  .terms ul li {
-    margin: 68px 20px 80px 20px;
-  }
-
-  .terms ul li a {
-    font-size: 12px;
-  }
-
-  .media-links ul li {
-    margin-right: 25px;
-    margin-top: 68px;
-  }
-
-  .footer-copyright {
-    font-size: 14px;
-  }
-}
-
-@media (max-width:820px) {
-  header {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-
-  .links .horizontal li {
-    margin-right: 15px;
-  }
-
-  .links,
-  .logo,
-  .search {
-    margin-top: 29px;
-  }
-
-  .logo>a {
-    font-size: 15px;
-  }
-
-  .links .horizontal li a {
-    font-size: 12px;
-  }
-
-  .logolinks:hover {
-    font-weight: 650;
-    font-size: 16px;
-  }
-
-  .searchlink {
-    font-size: 12px;
-  }
-
-  .search::before {
-    width: 15px;
-    height: 15px;
-    background-size: 100%;
-    left: -18px;
-    top: 4px;
-  }
-
-  .read-more-link::after {
-    left: 69px;
-  }
-
-  .read-more-link {
-    font-size: 12px;
-  }
-
-  h2 {
-    margin-bottom: 15px;
-    margin-top: 12px;
-    font-size: 20px;
-    line-height: 25px;
-  }
-
-  .aside {
-    margin: 80px 20px 0 15px;
-  }
-
-  .discover {
-    width: 100%;
-  }
-
-  .discover>h4 {
-    margin-left: 100px;
-    margin-top: 75px;
-  }
-
-  h1 {
-    font-size: 45px;
-    margin: 0 0 70px 40px;
-  }
-
-  .scroll-link-block {
-    margin-bottom: 150px;
-  }
-
-  .container-nusa-tengara {
-    width: 90%;
-    margin: 100px auto;
-  }
-
-  .container-nusa-tengara-info,
-  .indonesian-culture-info {
-    width: 50%;
-  }
-
-  .container-nusa-tengara-img,
-  .indonesian-culture-img {
-    width: 49%;
-  }
-
-  .container-nusa-tengara-img>img {
-    width: 100%;
-  }
-
-  .indonesian-culture-img>img {
-    width: 100%;
-  }
-
-  .container-bromo {
-    padding-top: 150px;
-  }
-
-  .slider>a {
-    margin: 0 25px 0 25px;
-    width: 10px;
-    height: 15px;
-  }
-
-  .slider>a>img {
-    width: 100%;
-  }
-
-  span {
-    font-size: 10px;
-    letter-spacing: 4px;
-  }
-
-  span::before {
-    width: 36px;
-    top: 7px;
-    left: -55px;
-  }
-
-  span::after {
-    width: 36px;
-    top: 7px;
-    right: -55px;
-  }
-
-  .container-indonesian-culture {
-    width: 90%;
-  }
-
-  .get-started {
-    padding: 8px 12px;
-    border-radius: 2px;
-    font-size: 12px;
-  }
-
-  label {
-    font-size: 12px;
-    margin: 0 12px 0 0;
-  }
-
-  .biglogo {
-    font-size: 15px;
-    margin-bottom: 20px;
-  }
-
-  .biglogo:hover {
-    font-size: 16px;
-  }
-
-  form {
-    width: 95%;
-  }
-
-  .email-input>h3 {
-    font-size: 15px;
-    margin-bottom: 20px;
-  }
-
-  input[type=email] {
-    padding-left: 5px;
-    padding-bottom: 10px;
-  }
-
-  .button-footer {
-    border-top-left-radius: 2px;
-    border-top-right-radius: 2px;
-    padding: 8px 10px;
-  }
-
-  .button-footer>img {
-    width: 100%;
-  }
-
-  .terms ul li {
-    margin: 50px 10px 50px 10px;
-  }
-
-  .media-links ul li {
-    margin-right: 10px;
-    margin-top: 50px;
-  }
-
-  .footer-copyright {
-    font-size: 12px;
-  }
-}
-
-@media (max-width:390px) {
-  .logo {
-    margin-top: 0px;
-  }
-
-  .aside {
-    display: none;
-  }
-
-  .links {
-    display: none;
-  }
-
-  .burger {
-    display: block;
-    margin-right: 30px;
-  }
-
-  .burger,
-  .search {
-    display: inline-block;
-  }
-
-  header {
-    align-items: center;
-  }
-
-  .mobile {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    margin-top: 10px;
-  }
-
-  .search {
-    margin-top: 0;
-  }
-
-  .button-footer {
-    border-top-left-radius: 2px;
-    border-top-right-radius: 2px;
-    padding: 3px 5px;
-  }
-
-  .scroll-link-block {
-    margin-bottom: 50px;
-  }
-
-  .container-nusa-tengara {
-    margin: 50px auto;
-  }
-
-  .indonesian-culture-title {
-    margin-top: 50px;
-    margin-bottom: 50px;
-  }
-
-  .container-bromo {
-    padding-top: 110px;
-  }
-
-  form {
-    width: 100%;
-  }
-
-  .button-footer>img {
-    width: 5px;
-    height: 8px;
-  }
-
-  .terms ul li {
-    display: block;
-    margin-top: 0;
+  .fourth-floor {
     margin-bottom: 0;
+    display: block;
   }
 
-  .terms ul {
+  .ready-to-explore {
+    font-size: 16px;
+
+  }
+
+  .button-style {
+    padding: 10px;
+  }
+
+  .first-floor-footer {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 50px;
+  }
+
+  h3 {
+    font-size: 20px;
+    margin-bottom: 0;
+    line-height: 26px;
+  }
+
+  .footer-left-text {
+    display: block;
+  }
+
+  .second-floor-footer {
+    display: none;
+  }
+
+  .input-form>input {
+    padding: 15px;
+  }
+
+  .footer-right-text {
+    display: block;
+    text-align: center;
+    width: 100%;
+  }
+
+  .footer-right-text>ul {
     margin-top: 40px;
   }
 
-  footer {
-    padding-bottom: 10px;
+  .footer-right-text ul li {
+    margin-bottom: 10px;
   }
 
-  .footer-copyright {
-    margin-top: 30px;
+  .copyright {
+    margin-bottom: 24px;
   }
-} */
+}
